@@ -1,11 +1,12 @@
-# gardr-facebook-renderer
+# gardr-socialmeida-sample
 
-This project contains a module which renders Facebook SDK like button and like box inside a Gardr container. The IFrame can be served from a different domain.
+This project contains a module which renders different social media widgets inside a Garðr container. 
+The sample runs the IFrame from a different origin, showing how data leackage can be prevented.
 
-[![Dependency Status](https://david-dm.org/gardr/gardr-facebook.png)](https://david-dm.org/gardr/gardr-facebook)
-[![devDependency Status](https://david-dm.org/gardr/gardr-facebook/dev-status.png)](https://david-dm.org/gardr/gardr-facebook#info=devD)
+[![Dependency Status](https://david-dm.org/gardr/gardr-socialmeida-sample.png)](https://david-dm.org/gardr/gardr-socialmeida-sample)
+[![devDependency Status](https://david-dm.org/gardr/gardr-socialmeida-sample/dev-status.png)](https://david-dm.org/gardr/gardr-socialmeida-sample#info=devD)
 
-[![NPM](https://nodei.co/npm/gardr-facebook.png?stars=true&downloads=true)](https://npmjs.org/package/gardr-facebook)
+[![NPM](https://nodei.co/npm/gardr-socialmeida-sample.png?stars=true&downloads=true)](https://npmjs.org/package/gardr-socialmeida-sample)
 
 # Using the module
 
@@ -39,8 +40,6 @@ All the sample code is located in the _samples_ folder.
 
 	$ npm install && npm start
 
-This opens up the URL [http://localhost:1338/](http://localhost:1338/).
-
-# Contributing
+This opens up the URL [http://localhost:1338/](http://localhost:1338/). The samples all render their content from what is a different host [http://localhost:1339/iframe.html](http://localhost:1339/iframe.html), see [Same Origin Policy](https://en.wikipedia.org/wiki/Same-origin_policy), this prevents the IFrame content from retrieving data from the host document.
 
 

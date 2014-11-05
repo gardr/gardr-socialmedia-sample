@@ -1,38 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Gardr Facebook Renderer sample</title>
+	<title>Garðr Social Media samples</title>
+	<meta charset="utf-8">
 	<style>
+	html, body, head, h1 {
+		margin: 0;
+		padding: 0;
+	}
 	body {
-		background-color: rgb(200, 200, 200);
-		color: white;
+		height: 100%;
+		min-height: 100%;
+		font-family: helvetica, arial , sans-serif;
+		background-color: rgb(255, 255, 255);
+	}
+	footer, header {
+		background-color: rgb(88,88,88);
+		color: rgb(255, 255, 255);
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 20%;
+	}
+	article {
 		margin-left: 20%;
+		min-height: 300px;
 	}
 	a, a:visited {
-		color: white;
+		color: rgb(0, 0, 0);
 		text-decoration: underline;
 	}
-	iframe {
-		border: 1px solid pink !important;
+	footer a, footer a:visited {
+		color: rgb(255, 255, 255);
 	}
-	#fb-container {
+	iframe {
+		border: 1px solid rgb(25, 200, 200) !important;
+	}
+	.safeContainer {
 		width: 300px;
 	}
 
 	</style>
 </head>
 <body>
-	<h1>Gardr Facebook Renderer</h1>
-	<p>Choose Facebook widget:</p>
-	<ul>
-		<li><a href="?type=button">Button</a></li>
-		<li><a href="?type=box">Box</a></li>
-	</ul>
-	<div id="fb-container"></div>
-	<p>
+	<header>
+		<h1>Garðr Social Media Samples</h1>
+	</header>
+	<article>
+		<p>Configured samples:</p>
+		<ul>
+			<li><a href="?type=button">Facebook Like Button</a></li>
+			<li><a href="?type=box">Facebook Like Box</a></li>
+			<li><a href="?type=twitter">Twitter Follow</a></li>
+		</ul>
+		<div id="safe-container" class="safeContainer"></div>
+	</article>
+	<footer>
 		Sample source code <a href="//github.com/gardr/gardr-facebook">on GitHub</a>.
-	</p>
-
-	<script src="fbHost.js"></script>
+	</footer>
+	<script src="host.js"></script>
 </body>
 </html>
