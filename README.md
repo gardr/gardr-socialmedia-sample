@@ -3,10 +3,10 @@
 This project contains a module which renders different social media widgets inside a Garðr container. 
 The sample runs the IFrame from a different origin, showing how data leackage can be prevented.
 
-[![Dependency Status](https://david-dm.org/gardr/gardr-socialmeida-sample.png)](https://david-dm.org/gardr/gardr-socialmeida-sample)
-[![devDependency Status](https://david-dm.org/gardr/gardr-socialmeida-sample/dev-status.png)](https://david-dm.org/gardr/gardr-socialmeida-sample#info=devD)
+[![Dependency Status](https://david-dm.org/gardr/gardr-socialmedia-sample.png)](https://david-dm.org/gardr/gardr-socialmedia-sample)
+[![devDependency Status](https://david-dm.org/gardr/gardr-socialmedia-sample/dev-status.png)](https://david-dm.org/gardr/gardr-socialmedia-sample#info=devD)
 
-[![NPM](https://nodei.co/npm/gardr-socialmeida-sample.png?stars=true&downloads=true)](https://npmjs.org/package/gardr-socialmeida-sample)
+[![NPM](https://nodei.co/npm/gardr-socialmedia-sample.png?stars=true&downloads=true)](https://npmjs.org/package/gardr-socialmedia-sample)
 
 # Using the module
 
