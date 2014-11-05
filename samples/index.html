@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Gardr Facebook Renderer sample</title>
+	<style>
+	body {
+		background-color: rgb(200, 200, 200);
+		color: white;
+		margin-left: 20%;
+	}
+	a, a:visited {
+		color: white;
+		text-decoration: underline;
+	}
+	iframe {
+		border: 1px solid pink !important;
+	}
+	#fb-container {
+		width: 300px;
+	}
+
+	</style>
+</head>
+<body>
+	<h1>Gardr Facebook Renderer</h1>
+	<p>Choose Facebook widget:</p>
+	<ul>
+		<li><a href="?type=button">Button</a></li>
+		<li><a href="?type=box">Box</a></li>
+	</ul>
+	<div id="fb-container"></div>
+	<p>
+		Sample source code <a href="//github.com/gardr/gardr-facebook">on GitHub</a>.
+	</p>
+
+	<script src="fbHost.js"></script>
+</body>
+</html>
