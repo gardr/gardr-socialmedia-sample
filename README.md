@@ -1,6 +1,6 @@
 # gardr-socialmeida-sample
 
-This project contains a module which renders different social media widgets inside a Garðr container. 
+This project contains a just some samples on how to configure different social media widgets using Garðr. 
 The sample runs the IFrame from a different origin, showing how data leackage can be prevented.
 
 [![Dependency Status](https://david-dm.org/gardr/gardr-socialmedia-sample.png)](https://david-dm.org/gardr/gardr-socialmedia-sample)
@@ -8,32 +8,28 @@ The sample runs the IFrame from a different origin, showing how data leackage ca
 
 [![NPM](https://nodei.co/npm/gardr-socialmedia-sample.png?stars=true&downloads=true)](https://npmjs.org/package/gardr-socialmedia-sample)
 
-# Using the module
+# Simple configuration
 
 	'use strict';
-	var gardrHost = require('gardr-host');
-	var params = require('query-params');
+	var manager  = require('gardr-host');
 	document.addEventListener( 'DOMContentLoaded', function(){	
-
-		// Required parameters by Facebook SDK
-		var fbParams = params.encode({
-			'fbAppId': '1375962765972285',
-			'fbLocale': 'nb_NO',
-			'fbType': type,
-			'fbLink': 'https://www.facebook.com/finn.no'
+		manager.config('twitter-content', {
+			width: '100%',
+			height: '20px',
+			data: {
+				'href': 'http://twitter.com/gardr',
+				'lang': 'en',
+				'showCount': 'false'			
+			}
 		});
-		var gardr = gardrHost({
-			iframeUrl: 'http://127.0.0.1:1338/iframe.html?' + fbParams
+		manager.queue('twitter-content', {
+			url : 'http://127.0.0.1:1339/twitterBundle.js',
+			container : 'twitter-container'
 		});
-
-		gardr.queue('fb-container', {
-			url : 'http://127.0.0.1:1338/renderBundle.js',
-			height: '300px',
-			container : 'fb-container'
-		});
-
-		gardr.render('fb-container');
+		manager.renderAll();
 	}, false );
+
+You can use the same configuration with an existing gardr configuraiton. All you need to do is to configure new placements like in the sample above.
 
 #  Running the samples
 All the sample code is located in the _samples_ folder.

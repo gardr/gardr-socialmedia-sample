@@ -4,8 +4,8 @@
   "description": "Simple Gardr project wihch securly frame social media widgets",
   "main": "lib/index.js",
   "scripts": {
-    "package-ext": "./node_modules/.bin/browserify samples/extBundle.js -o dist/ext.js",
-    "package-host": "./node_modules/.bin/browserify samples/sampleHostConfig.js -o dist/host.js",
+    "package-ext": "./node_modules/.bin/browserify samples/extBundle.js -o dist/ext.js --debug",
+    "package-host": "./node_modules/.bin/browserify samples/sampleHostConfig.js -o dist/host.js --debug",
     "package-fb-renderer": "./node_modules/.bin/browserify lib/facebook-renderer.js -o dist/fbBundle.js",
     "package-twitter-renderer": "./node_modules/.bin/browserify lib/twitter-renderer.js -o dist/twitterBundle.js",
     "package": "npm run package-ext | npm run package-host | npm run package-fb-renderer | npm run package-twitter-renderer",
@@ -25,7 +25,7 @@
   "dependencies": {
     "browserify": "^6.2.0",
     "gardr-ext": "^0.6.0",
-    "gardr-host": "^0.6.0",
+    "gardr-host": "^0.6.1",
     "query-params": "0.0.1"
   },
   "devDependencies": {
